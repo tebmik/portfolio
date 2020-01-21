@@ -29,8 +29,22 @@
 .about,
 .resume,
 .contact {
+    height:100%;
+    padding:0 20px;
     min-height:100vh;
+}
 
+.project-content,
+.about-content,
+.resume-content,
+.contact-content {
+    position:relative;
+    min-height:100vh;
+    display:grid;
+    align-self:center;
+    place-items: center center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1rem;
 }
 
 .project-content h2,
@@ -39,16 +53,22 @@
 .contact-content h2 {
     font-size:34px;
     font-weight:100;
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform:translate(-50%,-50%);
     font-family: "Roboto", sans-serif;
+    align-self:end;
 }
 
 .project-list {
     min-height:100vh;
     text-align:center;
+}
+
+@media screen and (min-width:573px) {
+    .project-content h2,
+    .about-content h2,
+    .resume-content h2,
+    .contact-content h2 {
+        align-self:center;
+    }
 }
 
 

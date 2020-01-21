@@ -28,6 +28,7 @@ const title = {
     fontWeight:"100",
     marginBottom:"40px",
     fontFamily:"Roboto",
+    paddingLeft:"10px",
 }
 
 const span = {
