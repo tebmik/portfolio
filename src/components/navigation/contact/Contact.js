@@ -9,11 +9,9 @@ const useStyles = makeStyles(theme => ({
     position:"relative",
     display:"grid",
     justifyContent:"center",
-    maxWidth:"260px",
-    width:"100%",
     '& > *': {
       margin: theme.spacing(1),
-      width:"260px",
+      width:"280px",
       margin:"20px 0"
     },
   },

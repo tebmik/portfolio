@@ -14,24 +14,25 @@ import InfoIcon from '@material-ui/icons/Info';
 const useStyles = makeStyles({
   list: {
     width: 250,
-  },
+ },
   fullList: {
     width: 'auto',
   },
+  listItem: {
+    fontSize:"1.5rem",
+    textDecoration:"none",
+    color:"#333",
+    fontWeight:"400",
+  },
+  iconContainer: {
+    display:"grid",
+    margin:"20px 0",
+    justifyContent:"center",
+    justifyItems:"center",
+    gridTemplateColumns:"1fr 1fr"
+  }
 });
 
-const listStyle = {
-    paddingLeft:"10px",
-    color:'#333',
-    
-}
-
-const link = {
-    textDecoration:'none',
-    fontFamily:"Roboto",
-    fontWeight:"100",
-    fontSize:"22px",
-}
 
 export default function SideDrawer() {
   const classes = useStyles();
@@ -55,31 +56,60 @@ export default function SideDrawer() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List>
-        <Link style={link} to="/projects" >
+        <Link to="/projects" >
             <ListItem button>
                 <InfoIcon />
-                <ListItemText style={listStyle} inset primary="Projects"/>    
+                <ListItemText 
+                  disableTypography 
+                  className={classes.listItem} 
+                  inset 
+                  primary="Projects"
+                />    
             </ListItem>
         </Link>
-        <Link style={link} to="/about" > 
+        <Link to="/about" > 
             <ListItem button>
                 <InfoIcon />
-                <ListItemText style={listStyle} inset primary="About"/> 
+                <ListItemText 
+                  disableTypography 
+                  className={classes.listItem} 
+                  inset 
+                  primary="About"
+                /> 
             </ListItem>
         </Link>
-        <Link style={link} to="/resume" >
+        <Link to="/resume" >
             <ListItem button>
                 <InfoIcon />
-                <ListItemText style={listStyle} inset primary="Resume"/>  
+                <ListItemText
+                  disableTypography 
+                  className={classes.listItem}  
+                  inset 
+                  primary="Resume"
+                />  
             </ListItem>
         </Link>
-        <Link style={link} to="/contact" >
+        <Link to="/contact" >
             <ListItem button>
                 <InfoIcon />
-                <ListItemText style={listStyle} inset primary="Contact"/>
+                <ListItemText 
+                  disableTypography 
+                  className={classes.listItem} 
+                  inset 
+                  primary="Contact"
+                />
             </ListItem>
         </Link>
       </List>
+      <Divider />
+      <div className={classes.iconContainer}>
+        <a href="#">
+          <i style={{fontSize:"24px", color:"rgba(0,0,0,0.5)"}} className="github icon"></i>
+        </a>
+        <a href="#">
+          <i style={{fontSize:"24px", color:"rgba(0,0,0,0.5)"}} className="linkedin icon"></i>
+        </a>
+      </div>
       <Divider />
     </div>
   );

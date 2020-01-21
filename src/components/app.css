@@ -51,10 +51,10 @@
 .about-content h2,
 .resume-content h2,
 .contact-content h2 {
-    font-size:34px;
+    font-size:3rem;
     font-weight:100;
     font-family: "Roboto", sans-serif;
-    align-self:end;
+    align-self:center;
 }
 
 .project-list {
