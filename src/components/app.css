@@ -71,6 +71,24 @@
     }
 }
 
+@media screen and (min-height:320px) {
+    .projects,
+    .about,
+    .resume,
+    .contact {
+        min-height:200vh;
+        display:grid;
+        align-content:center;
+    }
+    .project-content h2,
+    .about-content h2,
+    .resume-content h2,
+    .contact-content h2{
+        align-self:start;
+    }
+    
+}
+
 
 /* cards  */
 
