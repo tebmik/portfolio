@@ -71,7 +71,7 @@
     }
 }
 
-@media screen and (min-height:320px) {
+@media screen and (max-height:450px) {
     .projects,
     .about,
     .resume,
