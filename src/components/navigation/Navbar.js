@@ -19,15 +19,14 @@ const useStyles = makeStyles(theme => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  h6: {
-    color:"#444",
-  },
   
 }));
 
 const linkStyle = {
   textDecoration:'none',
-  color:'#444',
+  fontFamily:"Roboto",
+  fontSize:"26px",
+  color:"#444",
 }
 
 const Navbar = () => {

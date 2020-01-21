@@ -11,6 +11,7 @@ const pageContainer = {
 
 const homeHero = {
     minHeight:"100vh",
+    position:"relative",
 }
 const heroContent = {
     position:"absolute",
@@ -19,10 +20,11 @@ const heroContent = {
     transform:"translate(-50%,-50%)",
     width:"100%",
     padding:"20px",
+    textAlign:"left"
 }
 
 const title = {
-    fontSize:"34px",
+    fontSize:"3.2em",
     fontWeight:"100",
     marginBottom:"40px",
     fontFamily:"Roboto",
@@ -30,7 +32,7 @@ const title = {
 
 const span = {
     fontFamily:"Roboto",
-    fontSize:"34px",
+    fontSize:"1em",
     fontStyle:"italic",
 }
 

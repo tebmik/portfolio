@@ -9,17 +9,20 @@
 .app {
     max-width:1200px;
     margin:0 auto;
+    height:100%;
 }
 
 .navbar {
     position:relative;
     background-color:#fff !important;
+    height:80px;
 }
 
 .nav-content {
     max-width:1200px;
     width:100%;
     margin:0 auto;
+    height:100%;
 }
 
 .projects,
@@ -37,7 +40,7 @@
     font-size:34px;
     font-weight:100;
     position:absolute;
-    top:50%;
+    top:30%;
     left:50%;
     transform:translate(-50%,-50%);
     font-family: "Roboto", sans-serif;
@@ -48,15 +51,11 @@
     text-align:center;
 }
 
- .cards {
-     display:grid;
-     justify-content:center;
-     
- }
 
- .card-content {
-     display:grid;
-     align-content:center;
-     height:150px;
-     background-color:rgba(0,0,0,0.5);
- }
+/* cards  */
+
+.skills-container {
+    display:grid;
+    width:100%;
+    justify-content:center;
+}

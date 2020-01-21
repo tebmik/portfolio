@@ -86,8 +86,8 @@ export default function SideDrawer() {
 
   return (
     <div>
-      <div style={{height:'24px'}} onClick={toggleDrawer('left', true)}>
-          <MenuIcon />
+      <div style={{height:'32px', width:"32px"}} onClick={toggleDrawer('left', true)}>
+          <MenuIcon style={{fontSize:"32px"}}/>
         </div>
       <Drawer open={state.left} onClose={toggleDrawer('left', false)}>
         {sideList('left')}

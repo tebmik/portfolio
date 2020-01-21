@@ -6,8 +6,12 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    display:"flex",
+    justifyContent:"center",
+    flexDirection:"column",
     '& > *': {
-      margin: theme.spacing(2),
+      margin: theme.spacing(1),
+      
     },
   },
 }));
@@ -17,14 +21,16 @@ const Buttons = () => {
 
   return (
     <div className={classes.root}>
-      <Button variant="contained">
+      <Button style={{minWidth:"200px", maxWidth:"220px"}} variant="contained">
         <Link style={{color:"#333"}} to="/projects">
           Projects
         </Link>  
       </Button>
-      <Button variant="contained" color="primary">
-          <GitHubIcon style={{marginRight:"10px"}} fontSize="small" />
-        Github
+      <Button style={{minWidth:"200px", maxWidth:"220px"}} variant="contained" color="primary">
+        <GitHubIcon style={{marginRight:"10px"}} fontSize="small" />
+        <a style={{color:"#fff"}} href="https://github.com/tebmik" target="_blank">
+          GitHub
+        </a>
       </Button>
     </div>
   );
