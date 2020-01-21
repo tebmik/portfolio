@@ -1,0 +1,62 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+.app {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.navbar {
+    position:relative;
+    background-color:#fff !important;
+}
+
+.nav-content {
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+}
+
+.projects,
+.about,
+.resume,
+.contact {
+    min-height:100vh;
+
+}
+
+.project-content h2,
+.about-content h2,
+.resume-content h2,
+.contact-content h2 {
+    font-size:34px;
+    font-weight:100;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family: "Roboto", sans-serif;
+}
+
+.project-list {
+    min-height:100vh;
+    text-align:center;
+}
+
+ .cards {
+     display:grid;
+     justify-content:center;
+     
+ }
+
+ .card-content {
+     display:grid;
+     align-content:center;
+     height:150px;
+     background-color:rgba(0,0,0,0.5);
+ }

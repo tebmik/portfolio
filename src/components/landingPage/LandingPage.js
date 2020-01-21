@@ -1,0 +1,60 @@
+import React from "react";
+import Buttons from "./buttons/Buttons";
+import SkillsCard from "./skills/SkillsCard";
+
+const pageContainer = {
+    padding:"0 20px",
+    textAlign:"center",
+    position:"relative",
+    margin:"0 auto",
+}
+
+const homeHero = {
+    minHeight:"100vh",
+}
+const heroContent = {
+    position:"absolute",
+    top:"50%",
+    left:"50%",
+    transform:"translate(-50%,-50%)",
+    width:"100%",
+    padding:"20px",
+}
+
+const title = {
+    fontSize:"34px",
+    fontWeight:"100",
+    marginBottom:"40px",
+    fontFamily:"Roboto",
+}
+
+const span = {
+    fontFamily:"Roboto",
+    fontSize:"34px",
+    fontStyle:"italic",
+}
+
+const LandingPage = () => {
+    return(
+        <div style={pageContainer}>
+            <div style={homeHero}>
+                <div style={heroContent}>
+                    <h2 
+                        style={title}
+                    >Full Stack, 
+                        <span style={span}> Modern, </span>
+                        Web Developer
+                    </h2>
+                    <div>
+                        <Buttons />
+                    </div>
+                </div>
+            </div>
+            <div className="skills-card-wrapper">
+                <SkillsCard />
+            </div>
+        </div>
+    );
+}
+
+export default LandingPage;
