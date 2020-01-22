@@ -4,12 +4,12 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    alignContent: 'center',
+    display: 'grid',
     justifyContent:"center",
+    justifyItems:"center",
     minHeight:"100%",
     marginBottom:"40px",
+    gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr));",
     '& > *': {
       margin: theme.spacing(1),
       width: theme.spacing(23),
@@ -29,40 +29,50 @@ const SkillsCard = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Paper className={classes.paperContainer} elevation={3} >
-        <span>
-          <i 
-            style={{fontSize:"22px", marginBottom:"15px"}} 
-            className="computer icon" >
-          </i>
-        </span>
-        <span>ReactJS</span>
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>Javascript</span>
-      </Paper>
-      <Paper className={classes.paperContainer} elevation={3} >
-        <span>
-          <i 
-            style={{fontSize:"22px", marginBottom:"15px"}} 
-            className="server icon">
-          </i>
-        </span>
-        <span>Node</span>
-        <span>express</span>
-        <span>Php</span>
-      </Paper>
-      <Paper className={classes.paperContainer} elevation={3} >
-        <span>
-          <i 
-            style={{fontSize:"22px", marginBottom:"15px"}} 
-            className="database icon">
-          </i>
-        </span>
-        <span>MongoDB</span>
-        <span>MySql</span>
-      </Paper>
+    <div>
+      <h2 
+        style={{
+          fontWeight:"100",
+          fontSize:"3rem",
+          fontFamily: "Roboto, sansSerif"
+        }}>
+        Technical Skills
+      </h2>
+      <div className={classes.root}>
+        <Paper className={classes.paperContainer} elevation={3} >
+          <span>
+            <i 
+              style={{fontSize:"22px", marginBottom:"15px"}} 
+              className="computer icon" >
+            </i>
+          </span>
+          <span>ReactJS</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>Javascript</span>
+        </Paper>
+        <Paper className={classes.paperContainer} elevation={3} >
+          <span>
+            <i 
+              style={{fontSize:"22px", marginBottom:"15px"}} 
+              className="server icon">
+            </i>
+          </span>
+          <span>Node</span>
+          <span>express</span>
+          <span>Php</span>
+        </Paper>
+        <Paper className={classes.paperContainer} elevation={3} >
+          <span>
+            <i 
+              style={{fontSize:"22px", marginBottom:"15px"}} 
+              className="database icon">
+            </i>
+          </span>
+          <span>MongoDB</span>
+          <span>MySql</span>
+        </Paper>
+      </div>
     </div>
   );
 }
