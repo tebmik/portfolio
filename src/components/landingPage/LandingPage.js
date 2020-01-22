@@ -1,7 +1,7 @@
 import React from "react";
 import Buttons from "./buttons/Buttons";
 import SkillsCard from "./skills/SkillsCard";
-
+import Project from "./landingProjects/Project";
 
 const pageContainer = {
     padding:"0 20px",
@@ -54,6 +54,9 @@ const LandingPage = () => {
                             <Buttons />
                         </div>
                     </div>
+                </div>
+                <div>
+                    <Project />
                 </div>
                 <div className="skills-card-wrapper">
                     <SkillsCard />

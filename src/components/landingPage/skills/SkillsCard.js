@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     justifyItems:"center",
     minHeight:"100%",
     marginBottom:"40px",
-    gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr));",
+    gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
     '& > *': {
       margin: theme.spacing(1),
       width: theme.spacing(23),
