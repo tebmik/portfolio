@@ -2,6 +2,7 @@ import React from "react";
 import Buttons from "./buttons/Buttons";
 import SkillsCard from "./skills/SkillsCard";
 
+
 const pageContainer = {
     padding:"0 20px",
     textAlign:"center",
@@ -39,23 +40,27 @@ const span = {
 
 const LandingPage = () => {
     return(
-        <div style={pageContainer}>
-            <div style={homeHero}>
-                <div style={heroContent}>
-                    <h2 
-                        style={title}
-                    >Full Stack, 
-                        <span style={span}> Modern, </span>
-                        Web Developer
-                    </h2>
-                    <div>
-                        <Buttons />
+        <div>
+            <div style={pageContainer}>
+                <div style={homeHero}>
+                    <div style={heroContent}>
+                        <h2 
+                            style={title}
+                        >Full Stack, 
+                            <span style={span}> Modern, </span>
+                            Web Developer
+                        </h2>
+                        <div>
+                            <Buttons />
+                        </div>
                     </div>
                 </div>
+                <div className="skills-card-wrapper">
+                    <SkillsCard />
+                </div>
+                
             </div>
-            <div className="skills-card-wrapper">
-                <SkillsCard />
-            </div>
+            
         </div>
     );
 }

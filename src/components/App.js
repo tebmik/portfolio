@@ -8,6 +8,7 @@ import Projects from "./navigation/projects/Projects";
 import About from "./navigation/about/About";
 import Resume from "./navigation/resume/Resume";
 import Contact from "./navigation/contact/Contact";
+import Footer from "./footer/Footer";
 
 import "./app.css";
 
@@ -24,7 +25,7 @@ const App = () => {
                 <Route path="/resume" exact component={Resume} />
                 <Route path="/contact" exact component={Contact} />
             </div>
-            
+            <Footer />
         </div>
     )
 }
