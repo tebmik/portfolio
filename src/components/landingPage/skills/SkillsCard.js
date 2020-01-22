@@ -1,6 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import Divider from '@material-ui/core/Divider';
+
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -8,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent:"center",
     justifyItems:"center",
     minHeight:"100%",
-    marginBottom:"40px",
+    margin:"40px 0 80px 0",
     gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
     '& > *': {
       margin: theme.spacing(1),
@@ -30,6 +33,7 @@ const SkillsCard = () => {
 
   return (
     <div>
+      <Divider />
       <h2 
         style={{
           fontWeight:"100",
@@ -38,6 +42,7 @@ const SkillsCard = () => {
         }}>
         Technical Skills
       </h2>
+      <Divider />
       <div className={classes.root}>
         <Paper className={classes.paperContainer} elevation={3} >
           <span>

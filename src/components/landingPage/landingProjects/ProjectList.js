@@ -4,7 +4,7 @@ import ProjectItem from "./ProjectItem";
 
 const listGrid = {
     display:"grid",
-    jestifyContent:"center",
+    jestifyitems:"center",
     gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
     gridTemplateRows:"auto",
     gridGap:"20px",

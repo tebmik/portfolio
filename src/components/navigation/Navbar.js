@@ -15,12 +15,13 @@ import Slide from '@material-ui/core/Slide';
 
 import SideDrawer from "./Drawer";
 import ScrollUp from "./ScrollUp";
+import NavLinks from "./NavLinks";
 
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    color:"#444"
+    color:"#444",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -69,16 +70,23 @@ const Navbar = (props) => {
       <HideOnScroll {...props}>
         <AppBar className="navbar">
           <Toolbar className="nav-content" variant="dense">
-            <IconButton 
-              edge="start" 
-              className={classes.menuButton} 
-              aria-label="menu"
-            >
-              <SideDrawer />
-            </IconButton>
-            <Typography variant="h6">
-              <Link className="logo" style={linkStyle} to="/">Thomas Lloyd</Link>
-            </Typography>
+            <div>
+              <IconButton 
+                edge="start" 
+                className={classes.menuButton} 
+                aria-label="menu"
+              >
+                <SideDrawer />
+              </IconButton>
+            </div>
+            <div>
+              <Typography variant="h6">
+                <Link className="logo" style={linkStyle} to="/">Thomas Lloyd</Link>
+              </Typography>
+            </div>
+            <div>
+              <NavLinks />
+            </div>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

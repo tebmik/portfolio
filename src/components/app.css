@@ -25,6 +25,10 @@
     height:100%;
 }
 
+.navbar-links {
+    display:none;
+}
+
 .projects,
 .about,
 .resume,

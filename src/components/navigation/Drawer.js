@@ -8,7 +8,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
 import MenuIcon from '@material-ui/icons/Menu';
-import InfoIcon from '@material-ui/icons/Info';
 
 
 const useStyles = makeStyles({
@@ -55,10 +54,12 @@ export default function SideDrawer() {
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
     >
-      <List>
+      <List 
+        style={{
+          marginTop:"80px"
+        }}>
         <Link to="/projects" >
             <ListItem button>
-                <InfoIcon />
                 <ListItemText 
                   disableTypography 
                   className={classes.listItem} 
@@ -69,7 +70,6 @@ export default function SideDrawer() {
         </Link>
         <Link to="/about" > 
             <ListItem button>
-                <InfoIcon />
                 <ListItemText 
                   disableTypography 
                   className={classes.listItem} 
@@ -80,7 +80,6 @@ export default function SideDrawer() {
         </Link>
         <Link to="/resume" >
             <ListItem button>
-                <InfoIcon />
                 <ListItemText
                   disableTypography 
                   className={classes.listItem}  
@@ -91,7 +90,6 @@ export default function SideDrawer() {
         </Link>
         <Link to="/contact" >
             <ListItem button>
-                <InfoIcon />
                 <ListItemText 
                   disableTypography 
                   className={classes.listItem} 
@@ -103,14 +101,13 @@ export default function SideDrawer() {
       </List>
       <Divider />
       <div className={classes.iconContainer}>
-        <a href="#">
+        <a href="https://github.com/tebmik" target="_blank">
           <i style={{fontSize:"24px", color:"rgba(0,0,0,0.5)"}} className="github icon"></i>
         </a>
         <a href="#">
           <i style={{fontSize:"24px", color:"rgba(0,0,0,0.5)"}} className="linkedin icon"></i>
         </a>
       </div>
-      <Divider />
     </div>
   );
 
