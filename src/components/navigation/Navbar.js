@@ -12,7 +12,9 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import PropTypes from 'prop-types';
 import Slide from '@material-ui/core/Slide';
 
+
 import SideDrawer from "./Drawer";
+import ScrollUp from "./ScrollUp";
 
 
 const useStyles = makeStyles(theme => ({
@@ -80,6 +82,7 @@ const Navbar = (props) => {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
+      <ScrollUp />
     </div>
   );
 }
