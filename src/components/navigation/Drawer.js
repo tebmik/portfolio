@@ -112,7 +112,7 @@ export default function SideDrawer() {
   );
 
   return (
-    <div>
+    <div className="navbar-icon">
       <div style={{height:'32px', width:"32px"}} onClick={toggleDrawer('left', true)}>
           <MenuIcon style={{fontSize:"32px"}}/>
         </div>

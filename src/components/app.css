@@ -29,6 +29,15 @@
     display:none;
 }
 
+@media (min-width: 844px) {
+    .navbar-links {
+        display:block;
+    }
+    .navbar-icon {
+        display:none;
+    }
+}
+
 .projects,
 .about,
 .resume,
