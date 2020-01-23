@@ -3,6 +3,8 @@ import Buttons from "./buttons/Buttons";
 import SkillsCard from "./skills/SkillsCard";
 import Project from "./landingProjects/Project";
 import Responsive from "./responsive/Responsive";
+import Services from "./services/Services";
+
 
 const pageContainer = {
     padding:"0 20px",
@@ -61,6 +63,9 @@ const LandingPage = () => {
                 </div>
                 <div>
                     <Responsive />
+                </div>
+                <div>
+                    <Services />
                 </div>
                 <div className="skills-card-wrapper">
                     <SkillsCard />
