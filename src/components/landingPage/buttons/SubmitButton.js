@@ -12,13 +12,14 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+
 const SubmitButton = () => {
   const classes = useStyles();
-
+  
   return (
     <div className={classes.root}>
-      <Button variant="outlined" color="primary">
-        Primary
+      <Button type="submit" variant="outlined" color="primary">
+        Submit
       </Button>
     </div>
   );

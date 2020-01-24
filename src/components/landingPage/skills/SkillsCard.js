@@ -10,8 +10,8 @@ const useStyles = makeStyles(theme => ({
     display: 'grid',
     justifyContent:"center",
     justifyItems:"center",
-    minHeight:"100%",
-    margin:"40px 0 80px 0",
+    minHeight:"100vh",
+    margin:"40px 0 0 0",
     gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",
     '& > *': {
       margin: theme.spacing(1),
