@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-
+import axios from "axios";
 import SubmitButton from "../../landingPage/buttons/SubmitButton";
 
 const useStyles = makeStyles(theme => ({
@@ -19,57 +19,85 @@ const useStyles = makeStyles(theme => ({
 
 const Contact = () => {
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
+  const classes = useStyles();
 
-    const classes = useStyles();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('')
 
-    const onInputChange = (e) => {
-      console.log(e.target.value)
+    const onNameChange = (e) => {
+      setName(e.target.value);
+    }
+    const onEmailChange = (e) => {
+      setEmail(e.target.value);
+    }
+    const onSubjectChange = e => {
+      setSubject(e.target.value);
+    }
+    const onMessageChange = e => {
+      setMessage(e.target.value)
     }
 
     const onFormSubmit = (e) => {
       e.preventDefault();
-      console.log({name});
-      console.log({email});
-      console.log({subject});
-      console.log({message})
+      console.log(name);
+      console.log(email);
+      console.log(subject);
+      console.log(message);
+      setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
     }
+    
+    
 
     return(
         <div className="contact">
             <div className="contact-content">
                 <h2>Contact Me</h2>
-                <form onSubmit={onFormSubmit} className={classes.root} autoComplete="off">
+                <form
+                  id="contact-form"
+                  onSubmit={onFormSubmit}
+                  className={classes.root} 
+                  autoComplete="off">
                     <TextField
+                      onChange={onNameChange}
+                      value={name}
                       required 
                       name="name"
                       type="text"
-                      onChange={e => setName({name: e.target.value})} 
-                      label="Full Name" 
+                      label="Full Name"
+                      id="name" 
                     />
                     <TextField 
+                      onChange={onEmailChange}
+                      value={email}
                       required
                       name="email"
                       type="text"
-                      onChange={e => setEmail({email: e.target.value})}
-                      label="Email Address" 
+                      label="Email Address"
+                      id="email" 
                     />
                     <TextField 
+                      onChange={onSubjectChange}
+                      value={subject}
                       required
                       name="subject"
                       type="text"
-                      onChange={e => setSubject({subject: e.target.value})}
                       label="Subject" 
+                      id="subject"
                     />
-                    <TextField  
+                    <TextField
+                      onChange={onMessageChange}
+                      value={message}  
                       required
                       name="message"
                       type="text"
-                      onChange={e => setMessage({message: e.target.value})}
-                      label="Message" />
+                      label="Message"
+                      id="message" 
+                    />
                     <SubmitButton />
                 </form>
             </div>
