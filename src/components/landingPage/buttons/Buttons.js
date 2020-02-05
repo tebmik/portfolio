@@ -39,7 +39,7 @@ const Buttons = () => {
         variant="contained" 
         color="primary">
         <GitHubIcon style={{marginRight:"10px"}} fontSize="small" />
-        <a style={{color:"#fff"}} href="https://github.com/tebmik" target="_blank">
+        <a style={{color:"#fff"}} href="https://github.com/tebmik" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </Button>

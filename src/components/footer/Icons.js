@@ -19,7 +19,7 @@ const Icons = () => {
             <a href="#">
                 <i style={iconStyle} className="linkedin icon" ></i>
             </a>
-            <a href="https://github.com/tebmik" target="_blank">
+            <a href="https://github.com/tebmik" target="_blank" rel="noopener noreferrer">
                 <i style={iconStyle} className="github icon"></i>
             </a>
         </div>

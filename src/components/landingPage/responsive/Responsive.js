@@ -53,7 +53,10 @@ const Responsive = () => {
                         transform:"translate(-50%,-50%)",
                     
                     }} 
-                    src="https://media2.giphy.com/media/b2CD0Qrq2ulwY/source.gif"/>
+                    src="https://media2.giphy.com/media/b2CD0Qrq2ulwY/source.gif"
+                    alt="devices"
+                />
+                    
             </div>
         </div>
     );

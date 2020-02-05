@@ -101,7 +101,7 @@ export default function SideDrawer() {
       </List>
       <Divider />
       <div className={classes.iconContainer}>
-        <a href="https://github.com/tebmik" target="_blank">
+        <a href="https://github.com/tebmik" target="_blank" rel="noopener noreferrer">
           <i style={{fontSize:"24px", color:"rgba(0,0,0,0.5)"}} className="github icon"></i>
         </a>
         <a href="#">
