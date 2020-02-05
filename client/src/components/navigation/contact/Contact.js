@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import axios from "axios";
@@ -39,16 +39,20 @@ const Contact = () => {
       setMessage(e.target.value)
     }
 
-    const onFormSubmit = (e) => {
+    const onFormSubmit = async (e) => {
       e.preventDefault();
-      console.log(name);
-      console.log(email);
-      console.log(subject);
-      console.log(message);
       setName('');
       setEmail('');
       setSubject('');
       setMessage('');
+     
+      const form = await axios.post("/api/form", {
+        name,
+        email,
+        subject,
+        message
+      })
+      
     }
     
     
