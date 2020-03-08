@@ -1,4 +1,6 @@
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const itemWrapper = {
     textAlign:"right",
@@ -19,17 +21,19 @@ const para = {
 const ItemThree = () => {
     return(
         <div style={itemWrapper}>
-            <i style={Icon} className="laptop icon circular"></i>
-            <h5
-                style={{
-                    fontWeight:"100",
-                    fontSize:"2rem",
-                    fontFamily: "Roboto, sansSerif",
-                    marginBottom:"30px",
-                }}>
-                Design System
-            </h5>
-            <p style={para}>Consistent look, feel and experience that will bring focus, for your product.</p>
+            <ScrollAnimation animateIn='bounceInRight' delay="500">
+                <i style={Icon} className="laptop icon circular"></i>
+                <h5
+                    style={{
+                        fontWeight:"100",
+                        fontSize:"2rem",
+                        fontFamily: "Roboto, sansSerif",
+                        marginBottom:"30px",
+                    }}>
+                    Design System
+                </h5>
+                <p style={para}>Consistent look, feel and experience that will bring focus, for your product.</p>
+            </ScrollAnimation>
         </div>
     );
 }

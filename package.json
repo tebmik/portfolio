@@ -13,6 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "build":"node index.js",
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
@@ -28,5 +29,5 @@
   "bugs": {
     "url": "https://github.com/tebmik/portfolio/issues"
   },
-  "homepage": "https://github.com/tebmik/portfolio#readme"
+  "homepage": "."
 }

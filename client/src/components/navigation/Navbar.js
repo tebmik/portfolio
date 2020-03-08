@@ -34,6 +34,11 @@ const linkStyle = {
   fontFamily:"Roboto",
   fontSize:"26px",
   color:"#444",
+  fontWeight:700,
+}
+
+const light = {
+  fontWeight:300
 }
 
 function HideOnScroll(props) {
@@ -81,7 +86,7 @@ const Navbar = (props) => {
             </div>
             <div>
               <Typography variant="h6">
-                <Link className="logo" style={linkStyle} to="/">Thomas Lloyd</Link>
+                <Link className="logo" style={linkStyle} to="/"><span style={light}>Thomas </span>Lloyd</Link>
               </Typography>
             </div>
             <div>

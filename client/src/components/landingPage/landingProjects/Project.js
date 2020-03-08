@@ -6,19 +6,21 @@ import Divider from '@material-ui/core/Divider';
 const Project = () => {
     const pageStyle = {
         minHeight:"100vh",
-        marginBottom:"40px",
+        // marginBottom:"40px",
     }
+
+
     return(
-        <div style={pageStyle}>
+        <div id="projects" style={pageStyle}>
             <Divider />
             <h2 
                 style={{
                     fontWeight:"100",
                     fontSize:"3rem",
                     fontFamily: "Roboto, sansSerif",
-                    marginBottom:"30px",
+                    // marginBottom:"30px",
                   }}
-                >Projects
+                >Portfolio
             </h2>
             <Divider />
             <ProjectList />

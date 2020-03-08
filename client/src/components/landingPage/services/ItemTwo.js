@@ -1,4 +1,6 @@
 import React from "react";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 const itemWrapper = {
     textAlign:"right",
@@ -19,17 +21,19 @@ const para = {
 const ItemTwo = () => {
     return(
         <div style={itemWrapper}>
-            <i style={Icon} className="circle notch icon circular"></i>
-            <h5
-                style={{
-                    fontWeight:"100",
-                    fontSize:"2rem",
-                    fontFamily: "Roboto, sansSerif",
-                    marginBottom:"30px",
-                }}>
-                User Interface Design
-            </h5>
-            <p style={para}>Simple, clean designs with unforgettable visuals, colours and experience.</p>
+            <ScrollAnimation animateIn='bounceInRight' delay='250'>
+                <i style={Icon} className="circle notch icon circular"></i>
+                <h5
+                    style={{
+                        fontWeight:"100",
+                        fontSize:"2rem",
+                        fontFamily: "Roboto, sansSerif",
+                        marginBottom:"30px",
+                    }}>
+                    User Interface Design
+                </h5>
+                <p style={para}>Simple, clean designs with unforgettable visuals, colours and experience.</p>
+            </ScrollAnimation>
         </div>
     );
 }

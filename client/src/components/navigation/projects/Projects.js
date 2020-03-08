@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectList from "./ProjectList";
+import ProjectList from "../../landingPage/landingProjects/ProjectList";
 
 const Projects = () => {
     return(
@@ -7,11 +7,9 @@ const Projects = () => {
             <div className="projects">
                 <div className="project-content">
                     <h2>Projects</h2>
+                    <ProjectList />
                 </div>
                 
-            </div>
-            <div className="project-list container">
-                <ProjectList />
             </div>
         </div>
         

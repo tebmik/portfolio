@@ -26,18 +26,27 @@ const NavLinks = () => {
                     display:"grid",
                     gridTemplateColumns:"1fr 1fr 1fr 1fr",    
                 }}>
-                <ListItem button>
-                    <Link style={link} to="/projects">Projects</Link>
-                </ListItem>
-                <ListItem button>
-                    <Link style={link} to="/About">About</Link>
-                </ListItem>
-                <ListItem button>
-                    <Link style={link} to="/Resume">Resume</Link>
-                </ListItem>
-                <ListItem button>
-                    <Link style={link} to="/Contact">Contact</Link>
-                </ListItem>
+                
+                <a style={link} href="/#projects">
+                    <ListItem button>
+                        Portfolio
+                    </ListItem>
+                </a>
+                <a style={link} href="/#services">
+                    <ListItem button>
+                        About Me
+                    </ListItem>
+                </a> 
+                <a style={link} href="/Resume.pdf" target="_blank">
+                    <ListItem button>
+                        Resume
+                    </ListItem>
+                </a>
+                <Link style={link} to="/Contact">
+                    <ListItem button>
+                        Contact
+                    </ListItem>
+                </Link>
             </List>
         </div>
     );

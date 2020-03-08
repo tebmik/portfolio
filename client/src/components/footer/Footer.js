@@ -18,7 +18,8 @@ const Footer = () => {
                 margin:"0 auto",
                 width:"100%",
                 maxWidth:"1200px",
-                
+                paddingTop:"40px",
+                position:"relative"
             }}>
             <Divider />
             <div 

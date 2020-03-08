@@ -4,18 +4,36 @@ import SkillsCard from "./skills/SkillsCard";
 import Project from "./landingProjects/Project";
 import Responsive from "./responsive/Responsive";
 import Services from "./services/Services";
+import Divider from '@material-ui/core/Divider';
 
+
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const pageContainer = {
     padding:"0 20px",
     textAlign:"center",
     position:"relative",
     margin:"0 auto",
+    maxWidth:"1200px",
 }
 
 const homeHero = {
     minHeight:"100vh",
+    // height:"100%",
     position:"relative",
+    // background: "radial-gradient(#3DADF2, #020F59)",
+    minWidth:"100%",
+    margin:"0 auto",
+    overflow:"hidden",
+    
+    // backgroundImage:"url('https://images.unsplash.com/photo-1515895309288-a3815ab7cf81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')",
+    // backgroundPosition:"center",
+    // backgroundRepeat:"no-repeat",
+    // backgroundSize:"cover",
+    // backgroundAttachment:"fixed",
+    // transform:"translateY(-65px)",
+    clip: "rect(0, auto, auto, 0)",
+
 }
 const heroContent = {
     position:"absolute",
@@ -23,16 +41,31 @@ const heroContent = {
     left:"50%",
     transform:"translate(-50%,-50%)",
     width:"100%",
-    padding:"20px",
-    textAlign:"left"
+    // padding:"20px",
+    textAlign:"center",
+    // position: "fixed",
+    maxWidth:"1200px",
+}
+
+const overflow = {
+    overflow:"hidden",
+}
+
+const Icon = {
+    fontSize:"2.5rem",
+    color:"rgba(0,0,0,0.5)",
+    fontFamily:"Roboto",
+    fontStyle:"italic",
 }
 
 const title = {
     fontSize:"3.2em",
     fontWeight:"100",
-    marginBottom:"40px",
+    // marginBottom:"40px",
     fontFamily:"Roboto",
     paddingLeft:"10px",
+    textAlign:"center",
+    
 }
 
 const span = {
@@ -41,34 +74,68 @@ const span = {
     fontStyle:"italic",
 }
 
+const logo = "<tl>";
+
 const LandingPage = () => {
     return(
         <div>
             <div style={pageContainer}>
                 <div style={homeHero}>
                     <div style={heroContent}>
-                        <h2 
-                            style={title}
-                        >Full Stack, 
-                            <span style={span}> Modern, </span>
-                            Web Developer
-                        </h2>
-                        <div>
-                            <Buttons />
+                        <div 
+                            style={{
+                                paddingBottom:"30px"
+                            }}>
+                            <ScrollAnimation animateIn='bounceInDown'>
+                                <i style={Icon} className="icon circular">{logo}</i>
+                            </ScrollAnimation> 
                         </div>
+
+                        <ScrollAnimation animateIn='fadeIn' offset="10">
+                            <Divider />
+                                <h2 
+                                    style={title}
+                                >Creative 
+                                    
+                                    Web Development &amp;
+                                    <span style={span}> Design, </span>
+                                </h2>
+                            <Divider />
+                            <div 
+                                style={{
+                                    marginTop:"30px"
+                                }}>
+                                <Buttons />
+                            </div>
+                        </ScrollAnimation>
                     </div>
                 </div>
-                <div>
-                    <Project />
-                </div>
-                <div>
-                    <Responsive />
-                </div>
-                <div>
-                    <Services />
-                </div>
-                <div className="skills-card-wrapper">
-                    <SkillsCard />
+                <div 
+                    style={{
+                        maxWidth:"1200px",
+                        margin:"0 auto",
+                    }}>
+                    <div className={overflow}>
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <Project />
+                        </ScrollAnimation>
+                    </div>
+                    <div className={overflow}>
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <Services />
+                        </ScrollAnimation>
+                        <div className={overflow}>
+                            <ScrollAnimation animateIn='fadeIn'>
+                                <Responsive />
+                            </ScrollAnimation>
+                        </div>
+                    </div>
+                    
+                    <div className={overflow}>
+                        <ScrollAnimation animateIn='fadeIn'>
+                            <SkillsCard />
+                        </ScrollAnimation>
+                    </div>
                 </div>
                 
             </div>

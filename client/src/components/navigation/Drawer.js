@@ -58,27 +58,27 @@ export default function SideDrawer() {
         style={{
           marginTop:"80px"
         }}>
-        <Link to="/projects" >
+        <a href="/#projects" >
             <ListItem button>
                 <ListItemText 
                   disableTypography 
                   className={classes.listItem} 
                   inset 
-                  primary="Projects"
+                  primary="Portfolio"
                 />    
             </ListItem>
-        </Link>
-        <Link to="/about" > 
+        </a>
+        <a href="/#services" > 
             <ListItem button>
                 <ListItemText 
                   disableTypography 
                   className={classes.listItem} 
                   inset 
-                  primary="About"
+                  primary="About Me"
                 /> 
             </ListItem>
-        </Link>
-        <Link to="/resume" >
+        </a>
+        <a href="/Resume.pdf" target="_blank" >
             <ListItem button>
                 <ListItemText
                   disableTypography 
@@ -87,7 +87,7 @@ export default function SideDrawer() {
                   primary="Resume"
                 />  
             </ListItem>
-        </Link>
+        </a>
         <Link to="/contact" >
             <ListItem button>
                 <ListItemText 
@@ -104,7 +104,7 @@ export default function SideDrawer() {
         <a href="https://github.com/tebmik" target="_blank" rel="noopener noreferrer">
           <i style={{fontSize:"24px", color:"rgba(0,0,0,0.5)"}} className="github icon"></i>
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/thomas-lloyd-3005011a3/" target="_blank" rel="noopener noreferrer">
           <i style={{fontSize:"24px", color:"rgba(0,0,0,0.5)"}} className="linkedin icon"></i>
         </a>
       </div>

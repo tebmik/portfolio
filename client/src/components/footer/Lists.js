@@ -8,12 +8,15 @@ import ListItemText from '@material-ui/core/ListItemText';
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
-    maxWidth: 360,
-    backgroundColor: theme.palette.background.paper,
+    maxWidth: 1200,
+    backgroundColor: "transparent",
+    display:"grid",
+    
   },
   link: {
       fontSize:"1.5rem",
       color:"#444",
+      textAlign:'center',
   },
 }));
 
@@ -22,24 +25,24 @@ const Lists = () => {
 
   return (
     <List className={classes.root}>
-        <Link to="/projects">
+        <a href="/#projects">
             <ListItem>
-                <ListItemText disableTypography className={classes.link} autoFocus inset primary="Projects" />
+                <ListItemText disableTypography className={classes.link} autoFocus primary="Portfolio" />
             </ListItem>
-        </Link>
-        <Link to="/about">
+        </a>
+        <a href="/#services">
             <ListItem>
-                <ListItemText disableTypography className={classes.link} autoFocus inset primary="About" />
+                <ListItemText disableTypography className={classes.link} autoFocus primary="About Me" />
             </ListItem>
-        </Link>
-        <Link to="/resume">
+        </a>
+        <a href="/Resume.pdf" target="_blank">
             <ListItem>
-                <ListItemText disableTypography className={classes.link} autoFocus inset primary="Resume" />
+                <ListItemText disableTypography className={classes.link} autoFocus primary="Resume" />
             </ListItem>
-        </Link>
+        </a>
         <Link to="/contact">
             <ListItem>
-                <ListItemText disableTypography className={classes.link} autoFocus inset primary="Contact" />
+                <ListItemText disableTypography className={classes.link} autoFocus primary="Contact" />
             </ListItem>
         </Link>
     </List>
