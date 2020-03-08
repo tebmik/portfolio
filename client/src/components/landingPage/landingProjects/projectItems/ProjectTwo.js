@@ -35,7 +35,7 @@ const ProjectItem = () => {
               component="img"
               alt="media"
               height="140"
-              image="https://images.squarespace-cdn.com/content/v1/5d067e3d70d017000184a49e/1566146566989-YTL6WHDT4Q9KVPKPBBT6/ke17ZwdGBToddI8pDm48kPoswlzjSVMM-SxOp7CV59BZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI6FXy8c9PWtBlqAVlUS5izpdcIXDZqDYvprRqZ29Pw0o/Airbnb-dribbble-milestones2.gif?format=1000w"
+              image="https://i.ytimg.com/vi/GfKs8oNP9m8/mqdefault.jpg"
               title="TebMik Tube"
             />
             <CardContent className={classes.cardContent}>
