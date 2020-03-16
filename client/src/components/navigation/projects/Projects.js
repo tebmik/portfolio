@@ -6,7 +6,7 @@ const Projects = () => {
         <div>
             <div className="projects">
                 <div className="project-content">
-                    <h2>Projects</h2>
+                    <h2>Portfolio</h2>
                     <ProjectList />
                 </div>
                 

@@ -33,23 +33,23 @@ const ProjectItem = () => {
           <CardActionArea>  
             <CardMedia
               component="img"
-              alt="weather"
+              alt="payment App"
               height="140"
-              image="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80"
-              title="Weather App"
+              image="https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+              title="Stripe Application"
             />
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
-                Weather Trip
+                One itemBrand
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Weather application making use of third-party API's to retrieve the most accurate representation of the current weather conditions. 
+                A small ecommerce project making use of Stripe to accept credit cards, manage subscriptions, send money, run a marketplace.
               </Typography><br />
               <Typography variant="body2" color="textPrimary" component="p">
-                  Front-end appliction.
+                  Front to back application
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                  ReactJS
+                  NodeJS | Bootstrap | Stripe
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -57,13 +57,13 @@ const ProjectItem = () => {
         <CardActions>
           <Button size="large" color="primary">
             <a 
-              href="https://weather-77b1b.web.app/" 
+              href="https://serene-refuge-99455.herokuapp.com/" 
               target="_blank" 
               rel="noopener noreferrer"
               >Live Site
             </a>
           </Button>
-          <Button size="large" color="primary">
+          {/* <Button size="large" color="primary">
             <a 
               href="https://github.com/tebmik/weatherApp"
               target="_blank"
@@ -71,7 +71,7 @@ const ProjectItem = () => {
             >
               GitHub
             </a>
-          </Button>
+          </Button> */}
         </CardActions>
       </Card>
     </ScrollAnimation>  

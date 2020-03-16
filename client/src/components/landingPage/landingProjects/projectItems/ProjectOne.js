@@ -26,11 +26,11 @@ const ProjectItem = () => {
   const classes = useStyles();
 
   return (
-    <ScrollAnimation animateIn='bounceInRight'>
+    <ScrollAnimation animateIn='fadeInUp'>
       <Card 
         className={classes.card}
       >
-        <Link to="/">
+        {/* <Link to="/projects"> */}
           <CardActionArea>  
             <CardMedia
               component="img"
@@ -55,7 +55,7 @@ const ProjectItem = () => {
               </Typography>
             </CardContent>
           </CardActionArea>
-        </Link>
+        {/* </Link> */}
         <CardActions>
           <Button size="large" color="primary">
             <a 

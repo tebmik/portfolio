@@ -2,7 +2,7 @@ import React from "react";
 import ProjectOne from "./projectItems/ProjectOne";
 import ProjectTwo from "./projectItems/ProjectTwo";
 import ProjectThree from "./projectItems/ProjectThree";
-
+import ProjectFour from "./projectItems/ProjectFour"
 
 const listGrid = {
     display:"grid",
@@ -14,14 +14,13 @@ const listGrid = {
 }
 
 const ProjectList = () => {
-  
-
 
     return(
         <div style={listGrid}>
             <ProjectOne />
             <ProjectTwo />
             <ProjectThree />
+            <ProjectFour />
         </div>
     );
 }

@@ -25,7 +25,7 @@ const ProjectItem = () => {
   const classes = useStyles();
 
   return (
-    <ScrollAnimation animateIn='bounceInRight'>
+    <ScrollAnimation animateIn='fadeInUp'>
       <Card 
         className={classes.card}
       >
