@@ -23,8 +23,8 @@ const useStyles = makeStyles(theme => ({
     padding:"15px",
     gridGap:"10px",
     margin: theme.spacing(1),
-    width: theme.spacing(30),
-    height: theme.spacing(30),
+    width: "280px",
+    height: "280px",
     overflow:"hidden"
   },
 }));
