@@ -35,21 +35,21 @@ const ProjectItem = () => {
               component="img"
               alt="media"
               height="140"
-              image="https://i.ytimg.com/vi/GfKs8oNP9m8/mqdefault.jpg"
-              title="TebMik Tube"
+              image="https://images.unsplash.com/photo-1573497161223-d9c42d7b0bad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+              title="TebMik Job listings"
             />
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
-                Tebmik-Tube
+                Tebmik Job listings.
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Video media application using google's, Youtube data API. Search videos with zero limitations and... No advertising.
+                A user friendly web application which helps you find your next career.
               </Typography> <br />
               <Typography variant="body2" color="textPrimary" component="p">
-                  Front-end application 
+                   Serverless web application.
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                  ReactJs | Redux
+                  ReactJS | Redux | Firebase
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -57,7 +57,7 @@ const ProjectItem = () => {
         <CardActions>
           <Button size="large" color="primary">
             <a 
-              href="https://travel-c1c5a.firebaseapp.com/" 
+              href="https://job-search-32939.web.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               >Live Site
@@ -65,7 +65,7 @@ const ProjectItem = () => {
           </Button>
           <Button size="large" color="primary">
             <a 
-              href="https://github.com/tebmik/videoPlayer"
+              href="https://github.com/tebmik/jobListing"
               target="_blank"
               rel="noopener noreferrer"
             >
