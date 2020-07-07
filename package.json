@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build":"node index.js",
+    "build": "node index.js",
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
