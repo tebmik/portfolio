@@ -1,12 +1,14 @@
 const functions = require('firebase-functions');
+const admin = require("firebase-admin");
+admin.initializeApp();
 const nodemailer = require('nodemailer');
 const cors = require('cors')({ origin: true });
 const gmailEmail = functions.config().gmail.email;
 const gmailPassword = functions.config().gmail.password;
 const mailTransport = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    host: 'Gmail',
+    port: 587,
+    secure: false,
     auth: {
         user: gmailEmail,
         pass: gmailPassword,
@@ -22,11 +24,13 @@ exports.submit = functions.https.onRequest((req, res) => {
             from : req.body.name,
             replyTo: req.body.email,
             to: gmailEmail,
-            subject: `From my Website <${req.body.email}>`,
+            subject: `From lloydtom.com <${req.body.email}>`,
             text: req.body.message,
             html: `
+                <p>Subject:</p>
                 <h3>${req.body.subject}</h3>
                 <br />
+                <p>Message:</p>
                 <p>${req.body.message}</p>
             `
         };

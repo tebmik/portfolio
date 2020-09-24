@@ -78,7 +78,7 @@ export default function SideDrawer() {
                 /> 
             </ListItem>
         </a>
-        <a href="/Resume.pdf" target="_blank" >
+        <a href="/Thomas Lloyd Resume.pdf" target="_blank" >
             <ListItem button>
                 <ListItemText
                   disableTypography 

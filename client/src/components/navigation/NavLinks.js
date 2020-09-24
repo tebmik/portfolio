@@ -33,7 +33,7 @@ const NavLinks = () => {
         <a style={link} href="/#services">
           <ListItem button>About Me</ListItem>
         </a>
-        <a style={link} href="/Resume.pdf" target="_blank">
+        <a style={link} href="/Thomas Lloyd Resume.pdf" target="_blank">
           <ListItem button>
             <GetAppIcon />
             Resume

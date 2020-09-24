@@ -32,8 +32,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Contact = () => {
-
-
   const firebaseConfig = {
     apiKey: API_KEY,
     authDomain: AUTH_DOMAIN,
@@ -73,28 +71,26 @@ const Contact = () => {
       setEmail('');
       setSubject('');
       setMessage('');
-      setTitle('Thanks for your message')
-      // const form = await axios.post("/api/form", {
-      //   name,
-      //   email,
-      //   subject,
-      //   message
-      // })
+      
+
       const data = { 
         name, 
         email, 
         subject, 
         message 
       };
+      // console.log(data);
       await axios.post(FUNC_URL, data)
         .then(res => {
           if(firebase) {
             return firebase
               .database()
-              .ref('contacts')
+              .ref('messages')
               .push(data)
           };
-          
+          if(res) {
+            console.log(res);
+          }
         })
         .catch(error => {
           console.log(error)
