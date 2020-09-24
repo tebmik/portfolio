@@ -51,22 +51,12 @@ const Responsive = () => {
                     position: "relative",
                     maxWidth: "100%",
                     maxHeight: "100%",
-                    height: "220px",
+                    height: "360px",
                     overflow: "hidden",
                     objectFit: "cover",
                 }}>
-                {/* <img 
-                    style={{
-                        position:"absolute",
-                        top:"50%",
-                        left:"50%",
-                        transform:"translate(-50%,-50%)",
-                    
-                    }} 
-                    src="https://media2.giphy.com/media/b2CD0Qrq2ulwY/source.gif"
-                    alt="devices"
-                /> */}
                 <video
+                    alt="devices"
                     style={{
                         position: "absolute",
                         top: "50%",
