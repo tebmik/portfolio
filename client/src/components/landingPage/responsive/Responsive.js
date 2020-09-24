@@ -24,6 +24,7 @@ const Responsive = () => {
             <ScrollAnimation
                 animateIn="fadeIn"
                 animateOut="fadeOut"
+                animateOnce={true}
                 delay="200">
                 <div>
                     <Divider />
