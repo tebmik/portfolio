@@ -24,7 +24,7 @@ const ProjectItem = () => {
     const classes = useStyles();
 
     return (
-        <ScrollAnimation animateIn="fadeInUp">
+        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
             <Card className={classes.card}>
                 {/* <Link to="/projects"> */}
                 <CardActionArea>
