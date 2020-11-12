@@ -1,0 +1,5 @@
+export const FETCH_DETAILS = 'FETCH_DETAILS';
+export const START_FETCH = 'START_FETCH';
+
+export const ITEM_FETCH_START = 'ITEM_FETCH_START';
+export const ITEM_FETCH_SUCCESS = 'ITEM_FETCH_SUCCESS';

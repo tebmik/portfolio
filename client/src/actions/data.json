@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "img": [
+            "projectImages/img_39.jpg",
+            "projectImages/1.png",
+            "https://images.unsplash.com/photo-1573497161223-d9c42d7b0bad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        ],
+        "title": "Dee Frost Jewellery",
+        "typographyHeading": "Dee Frost Jewellery",
+        "typographyBody": "Website for independant, local Jewellery business. Supporting ethical materials to produce high-end products. Eco-webhosting has been used for this website to meet the ethical needs of the client.",
+        "techTools": "HTML5 | CSS3 | Javascript | PHP | MySql",
+        "projectHref": "http://www.deefrostjewellery.com/",
+        "projectGithub": "https://github.com/tebmik/deefrostjewellery"
+    },
+    {
+        "id": 1,
+        "img": [
+            "https://images.unsplash.com/photo-1573497161223-d9c42d7b0bad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        ],
+        "title": "TebMik Job listings",
+        "typographyHeading": "Tebmik Job listings.",
+        "typographyBody": "A user friendly web application which helps you find your next career. Type in 'what' &amp; 'Where' into the search fields and connect to the employers.",
+        "techTools": "ReactJS | Redux | Firebase",
+        "projectHref": "https://job-search-32939.web.app/",
+        "projectGithub": "https://github.com/tebmik/jobListing"
+    },
+    {
+        "id": 2,
+        "img": [
+            "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80"
+        ],
+        "title": "Weather App",
+        "typographyHeading": "Weather Trip",
+        "typographyBody": "Weather application making use of third-party API's to retrieve the most accurate representation of the current weather conditions.",
+        "techTools": "ReactJS",
+        "projectHref": "https://weather-77b1b.web.app/",
+        "projectGithub": "https://github.com/tebmik/weatherApp"
+    },
+    {
+        "id": 3,
+        "img": [
+            "https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        ],
+        "title": "Stripe Application",
+        "typographyHeading": "One itemBrand",
+        "typographyBody": "A small ecommerce project making use of Stripe to accept credit cards, manage subscriptions, send money, run a marketplace.",
+        "techTools": "NodeJS | Bootstrap | Stripe",
+        "projectHref": "https://serene-refuge-99455.herokuapp.com/",
+        "projectGithub": ""
+    }
+]

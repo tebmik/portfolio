@@ -1,134 +1,134 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
 .app {
-  /* max-width:1200px; */
-  margin: 0 auto;
-  height: 100%;
-  min-width: 320px;
+    /* max-width:1200px; */
+    margin: 0 auto;
+    min-height: 100vh;
+    min-width: 320px;
 }
 
 .navbar {
-  position: relative;
-  background-color: #fff !important;
-  height: 80px;
-  box-shadow: transparent !important;
+    position: relative;
+    background-color: #fff !important;
+    height: 80px;
+    box-shadow: transparent !important;
 }
 
 .nav-content {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
 }
 
 .navbar-links {
-  display: none;
+    display: none;
 }
 
 @media (min-width: 844px) {
-  .navbar-links {
-    display: block;
-  }
-  .navbar-icon {
-    display: none;
-  }
+    .navbar-links {
+        display: block;
+    }
+    .navbar-icon {
+        display: none;
+    }
 }
 
 .projects,
 .about,
 .resume,
 .contact {
-  height: 100%;
-  padding: 0 20px;
-  /* min-height:100vh; */
-  max-width: 1200px;
-  margin: 0 auto;
-  z-index: 10;
-  /* background-color:#fff; */
+    height: 100%;
+    padding: 0 20px;
+    /* min-height:100vh; */
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 10;
+    /* background-color:#fff; */
 }
 
 .project-content,
 .about-content,
 .resume-content,
 .contact-content {
-  position: relative;
-  min-height: 100vh;
-  display: grid;
-  align-self: center;
-  place-items: center center;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 1rem;
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    align-self: center;
+    place-items: center center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1rem;
 }
 
 .project-content h2,
 .about-content h2,
 .resume-content h2,
 .contact-content h2 {
-  font-size: 3rem;
-  font-weight: 100;
-  font-family: "Roboto", sans-serif;
-  align-self: center;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
 }
 
 .project-list {
-  min-height: 100vh;
-  text-align: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
 @media screen and (min-width: 573px) {
-  .project-content h2,
-  .about-content h2,
-  .resume-content h2,
-  .contact-content h2 {
-    align-self: center;
-  }
+    .project-content h2,
+    .about-content h2,
+    .resume-content h2,
+    .contact-content h2 {
+        align-self: center;
+    }
 }
 
 @media screen and (max-height: 450px) {
-  .projects,
-  .about,
-  .resume,
-  .contact {
-    min-height: 200vh;
-    display: grid;
-    align-content: center;
-  }
-  .project-content h2,
-  .about-content h2,
-  .resume-content h2,
-  .contact-content h2 {
-    align-self: start;
-  }
+    .projects,
+    .about,
+    .resume,
+    .contact {
+        min-height: 200vh;
+        display: grid;
+        align-content: center;
+    }
+    .project-content h2,
+    .about-content h2,
+    .resume-content h2,
+    .contact-content h2 {
+        align-self: start;
+    }
 }
 
 /* cards  */
 
 .skills-container {
-  min-height: 100vh;
-  display: grid;
-  width: 100%;
-  justify-content: center;
+    min-height: 100vh;
+    display: grid;
+    width: 100%;
+    justify-content: center;
 }
 
 /* SERVICES  */
 
 .services-wrapper {
-  padding-top: 40px;
-  min-height: 100%;
-  display: grid;
-  align-content: start;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
-  grid-gap: 40px;
-  margin-bottom: 80px;
+    padding-top: 40px;
+    min-height: 100%;
+    display: grid;
+    align-content: start;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+    grid-gap: 40px;
+    margin-bottom: 80px;
 }
 
 .title-content {
-  text-align: left;
+    text-align: left;
 }
